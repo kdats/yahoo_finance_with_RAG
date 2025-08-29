@@ -1,0 +1,22 @@
+{
+  "ticker": "AAPL",
+  "fiscal_year": 2023,
+  "currency": "USD",
+  "income_statement": {
+    "revenue": 383285000000.0,
+    "gross_profit": 169148000000.0,
+    "operating_income": 114301000000.0,
+    "net_income": 96995000000.0,
+    "eps_diluted": 6.13
+  },
+  "balance_sheet": {
+    "assets": 352583000000.0,
+    "liabilities": 290437000000.0,
+    "equity": 62146000000.0,
+    "cash_and_cash_equivalents": 29965000000.0
+  },
+  "source": {
+    "provider": "yfinance",
+    "urls": []
+  }
+}

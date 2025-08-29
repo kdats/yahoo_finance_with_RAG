@@ -1,0 +1,22 @@
+{
+  "ticker": "TSLA",
+  "fiscal_year": 2021,
+  "currency": "USD",
+  "income_statement": {
+    "revenue": 53823000000.0,
+    "gross_profit": 13606000000.0,
+    "operating_income": 6496000000.0,
+    "net_income": 5524000000.0,
+    "eps_diluted": 1.63
+  },
+  "balance_sheet": {
+    "assets": 62131000000.0,
+    "liabilities": 30548000000.0,
+    "equity": 31583000000.0,
+    "cash_and_cash_equivalents": 17576000000.0
+  },
+  "source": {
+    "provider": "yfinance",
+    "urls": []
+  }
+}

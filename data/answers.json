@@ -1,0 +1,41 @@
+[
+  {
+    "question": "Tesla net income in 2022 vs 2021",
+    "tsla_2022": 12583000000.0,
+    "tsla_2021": 5524000000.0,
+    "delta": 7059000000.0
+  },
+  {
+    "question": "Apple cash & cash equivalents in FY2023",
+    "aapl_2023_cash": 29965000000.0
+  },
+  {
+    "question": "Which had higher EPS in 2022, MSFT or GOOGL?",
+    "msft_eps_2022": 9.65,
+    "googl_eps_2022": 4.56,
+    "higher": "MSFT"
+  },
+  {
+    "question": "Amazon % assets financed by liabilities (2021)",
+    "amzn_liabilities_2021": 282304000000.0,
+    "amzn_assets_2021": 420549000000.0,
+    "pct": 67.127492872412
+  },
+  {
+    "question": "Tesla operating income last 3 FY",
+    "values": [
+      [
+        2022,
+        13832000000.0
+      ],
+      [
+        2023,
+        8891000000.0
+      ],
+      [
+        2024,
+        7760000000.0
+      ]
+    ]
+  }
+]

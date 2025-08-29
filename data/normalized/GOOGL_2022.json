@@ -1,0 +1,22 @@
+{
+  "ticker": "GOOGL",
+  "fiscal_year": 2022,
+  "currency": "USD",
+  "income_statement": {
+    "revenue": 282836000000.0,
+    "gross_profit": 156633000000.0,
+    "operating_income": 74842000000.0,
+    "net_income": 59972000000.0,
+    "eps_diluted": 4.56
+  },
+  "balance_sheet": {
+    "assets": 365264000000.0,
+    "liabilities": 109120000000.0,
+    "equity": 256144000000.0,
+    "cash_and_cash_equivalents": 21879000000.0
+  },
+  "source": {
+    "provider": "yfinance",
+    "urls": []
+  }
+}

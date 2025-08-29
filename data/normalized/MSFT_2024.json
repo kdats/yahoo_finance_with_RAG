@@ -1,0 +1,22 @@
+{
+  "ticker": "MSFT",
+  "fiscal_year": 2024,
+  "currency": "USD",
+  "income_statement": {
+    "revenue": 245122000000.0,
+    "gross_profit": 171008000000.0,
+    "operating_income": 109433000000.0,
+    "net_income": 88136000000.0,
+    "eps_diluted": 11.8
+  },
+  "balance_sheet": {
+    "assets": 512163000000.0,
+    "liabilities": 243686000000.0,
+    "equity": 268477000000.0,
+    "cash_and_cash_equivalents": 18315000000.0
+  },
+  "source": {
+    "provider": "yfinance",
+    "urls": []
+  }
+}

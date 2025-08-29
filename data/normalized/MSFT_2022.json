@@ -1,0 +1,22 @@
+{
+  "ticker": "MSFT",
+  "fiscal_year": 2022,
+  "currency": "USD",
+  "income_statement": {
+    "revenue": 198270000000.0,
+    "gross_profit": 135620000000.0,
+    "operating_income": 83383000000.0,
+    "net_income": 72738000000.0,
+    "eps_diluted": 9.65
+  },
+  "balance_sheet": {
+    "assets": 364840000000.0,
+    "liabilities": 198298000000.0,
+    "equity": 166542000000.0,
+    "cash_and_cash_equivalents": 13931000000.0
+  },
+  "source": {
+    "provider": "yfinance",
+    "urls": []
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "ticker": "AAPL",
+  "fiscal_year": 2022,
+  "currency": "USD",
+  "income_statement": {
+    "revenue": 394328000000.0,
+    "gross_profit": 170782000000.0,
+    "operating_income": 119437000000.0,
+    "net_income": 99803000000.0,
+    "eps_diluted": 6.11
+  },
+  "balance_sheet": {
+    "assets": 352755000000.0,
+    "liabilities": 302083000000.0,
+    "equity": 50672000000.0,
+    "cash_and_cash_equivalents": 23646000000.0
+  },
+  "source": {
+    "provider": "yfinance",
+    "urls": []
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "ticker": "AMZN",
+  "fiscal_year": 2022,
+  "currency": "USD",
+  "income_statement": {
+    "revenue": 513983000000.0,
+    "gross_profit": 225152000000.0,
+    "operating_income": 12248000000.0,
+    "net_income": -2722000000.0,
+    "eps_diluted": -0.27
+  },
+  "balance_sheet": {
+    "assets": 462675000000.0,
+    "liabilities": 316632000000.0,
+    "equity": 146043000000.0,
+    "cash_and_cash_equivalents": 53888000000.0
+  },
+  "source": {
+    "provider": "yfinance",
+    "urls": []
+  }
+}

@@ -1,0 +1,20 @@
+Tesla net income in 2022 vs 2021
+  - tsla_2022: 12,583,000,000.00
+  - tsla_2021: 5,524,000,000.00
+  - delta: 7,059,000,000.00
+
+Apple cash & cash equivalents in FY2023
+  - aapl_2023_cash: 29,965,000,000.00
+
+Which had higher EPS in 2022, MSFT or GOOGL?
+  - msft_eps_2022: 9.65
+  - googl_eps_2022: 4.56
+  - higher: MSFT
+
+Amazon % assets financed by liabilities (2021)
+  - amzn_liabilities_2021: 282,304,000,000.00
+  - amzn_assets_2021: 420,549,000,000.00
+  - pct: 67.13
+
+Tesla operating income last 3 FY
+  - values: [(2022, 13832000000.0), (2023, 8891000000.0), (2024, 7760000000.0)]

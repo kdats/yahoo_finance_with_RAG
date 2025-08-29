@@ -1,0 +1,22 @@
+{
+  "ticker": "TSLA",
+  "fiscal_year": 2024,
+  "currency": "USD",
+  "income_statement": {
+    "revenue": 97690000000.0,
+    "gross_profit": 17450000000.0,
+    "operating_income": 7760000000.0,
+    "net_income": 7130000000.0,
+    "eps_diluted": 2.04
+  },
+  "balance_sheet": {
+    "assets": 122070000000.0,
+    "liabilities": 48390000000.0,
+    "equity": 73680000000.0,
+    "cash_and_cash_equivalents": 16139000000.0
+  },
+  "source": {
+    "provider": "yfinance",
+    "urls": []
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "ticker": "AMZN",
+  "fiscal_year": 2023,
+  "currency": "USD",
+  "income_statement": {
+    "revenue": 574785000000.0,
+    "gross_profit": 270046000000.0,
+    "operating_income": 36852000000.0,
+    "net_income": 30425000000.0,
+    "eps_diluted": 2.9
+  },
+  "balance_sheet": {
+    "assets": 527854000000.0,
+    "liabilities": 325979000000.0,
+    "equity": 201875000000.0,
+    "cash_and_cash_equivalents": 73387000000.0
+  },
+  "source": {
+    "provider": "yfinance",
+    "urls": []
+  }
+}

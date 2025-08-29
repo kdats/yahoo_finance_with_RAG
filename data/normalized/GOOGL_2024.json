@@ -1,0 +1,22 @@
+{
+  "ticker": "GOOGL",
+  "fiscal_year": 2024,
+  "currency": "USD",
+  "income_statement": {
+    "revenue": 350018000000.0,
+    "gross_profit": 203712000000.0,
+    "operating_income": 112390000000.0,
+    "net_income": 100118000000.0,
+    "eps_diluted": 8.04
+  },
+  "balance_sheet": {
+    "assets": 450256000000.0,
+    "liabilities": 125172000000.0,
+    "equity": 325084000000.0,
+    "cash_and_cash_equivalents": 23466000000.0
+  },
+  "source": {
+    "provider": "yfinance",
+    "urls": []
+  }
+}

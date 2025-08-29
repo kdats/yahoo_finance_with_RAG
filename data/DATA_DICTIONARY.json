@@ -1,0 +1,22 @@
+{
+  "ticker": "Stock ticker",
+  "fiscal_year": "Fiscal year (int)",
+  "currency": "USD",
+  "income_statement": {
+    "revenue": "Total revenue",
+    "gross_profit": "Gross profit",
+    "operating_income": "Operating income (EBIT)",
+    "net_income": "Net income",
+    "eps_diluted": "Diluted EPS"
+  },
+  "balance_sheet": {
+    "assets": "Total assets",
+    "liabilities": "Total liabilities",
+    "equity": "Shareholders' equity",
+    "cash_and_cash_equivalents": "Cash & cash equivalents"
+  },
+  "source": {
+    "provider": "yfinance",
+    "urls": []
+  }
+}

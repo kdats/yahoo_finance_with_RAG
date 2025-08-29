@@ -1,0 +1,22 @@
+{
+  "ticker": "AMZN",
+  "fiscal_year": 2024,
+  "currency": "USD",
+  "income_statement": {
+    "revenue": 637959000000.0,
+    "gross_profit": 311671000000.0,
+    "operating_income": 68593000000.0,
+    "net_income": 59248000000.0,
+    "eps_diluted": 5.53
+  },
+  "balance_sheet": {
+    "assets": 624894000000.0,
+    "liabilities": 338924000000.0,
+    "equity": 285970000000.0,
+    "cash_and_cash_equivalents": 78779000000.0
+  },
+  "source": {
+    "provider": "yfinance",
+    "urls": []
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "ticker": "MSFT",
+  "fiscal_year": 2023,
+  "currency": "USD",
+  "income_statement": {
+    "revenue": 211915000000.0,
+    "gross_profit": 146052000000.0,
+    "operating_income": 88523000000.0,
+    "net_income": 72361000000.0,
+    "eps_diluted": 9.68
+  },
+  "balance_sheet": {
+    "assets": 411976000000.0,
+    "liabilities": 205753000000.0,
+    "equity": 206223000000.0,
+    "cash_and_cash_equivalents": 34704000000.0
+  },
+  "source": {
+    "provider": "yfinance",
+    "urls": []
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "ticker": "TSLA",
+  "fiscal_year": 2022,
+  "currency": "USD",
+  "income_statement": {
+    "revenue": 81462000000.0,
+    "gross_profit": 20853000000.0,
+    "operating_income": 13832000000.0,
+    "net_income": 12583000000.0,
+    "eps_diluted": 3.62
+  },
+  "balance_sheet": {
+    "assets": 82338000000.0,
+    "liabilities": 36440000000.0,
+    "equity": 45898000000.0,
+    "cash_and_cash_equivalents": 16253000000.0
+  },
+  "source": {
+    "provider": "yfinance",
+    "urls": []
+  }
+}

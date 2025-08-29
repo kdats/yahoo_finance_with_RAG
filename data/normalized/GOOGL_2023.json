@@ -1,0 +1,22 @@
+{
+  "ticker": "GOOGL",
+  "fiscal_year": 2023,
+  "currency": "USD",
+  "income_statement": {
+    "revenue": 307394000000.0,
+    "gross_profit": 174062000000.0,
+    "operating_income": 84293000000.0,
+    "net_income": 73795000000.0,
+    "eps_diluted": 5.8
+  },
+  "balance_sheet": {
+    "assets": 402392000000.0,
+    "liabilities": 119013000000.0,
+    "equity": 283379000000.0,
+    "cash_and_cash_equivalents": 24048000000.0
+  },
+  "source": {
+    "provider": "yfinance",
+    "urls": []
+  }
+}

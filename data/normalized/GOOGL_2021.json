@@ -1,0 +1,22 @@
+{
+  "ticker": "GOOGL",
+  "fiscal_year": 2021,
+  "currency": "USD",
+  "income_statement": {
+    "revenue": 257637000000.0,
+    "gross_profit": 146698000000.0,
+    "operating_income": 78714000000.0,
+    "net_income": 76033000000.0,
+    "eps_diluted": 5.61
+  },
+  "balance_sheet": {
+    "assets": 359268000000.0,
+    "liabilities": 107633000000.0,
+    "equity": 251635000000.0,
+    "cash_and_cash_equivalents": 20945000000.0
+  },
+  "source": {
+    "provider": "yfinance",
+    "urls": []
+  }
+}
