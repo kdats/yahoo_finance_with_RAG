@@ -1,14 +1,26 @@
 # Architecture Design Diagram
 
 <img width="1547" height="1460" alt="image" src="https://github.com/user-attachments/assets/48404d3c-f0db-41ef-9a1a-e3afd23a928c" />
+# Explaination
+* A Python wrapper file leverages the yfinance library to pull annual income statements and balance sheets, normalizing required metrics like revenue, net income and cash equivalents for each ticker-year pair
 
+* The pipeline writes per‑record JSON files and consolidates all normalized records into bulk JSONL and CSV outputs for later stages After data extraction, the `financials.jsonl` file is uploaded to Google Cloud Storage to stage data for the cloud pipeline, as shown in the architecture diagram
+
+* `BigQuery` ingests the staged JSONL into a raw table financials_raw, forming the foundation for downstream processing. A derived BigQuery table financials_text concatenates ticker, fiscal year and key fields into a single doc_text string while preserving the original JSON row
+
+* An embeddings table financials_vect with an ARRAY<FLOAT64> column is created to hold vector representations for vector search
+
+* Vertex AI’s `text-embedding-004` model generates embeddings for each doc_text and writes them into financials_vect via BigQuery’s load API
+
+* User questions are embedded with the same model, and BigQuery’s `COSINE_DISTANCE` operator retrieves the `top‑k` closest financial records from financials_vect
+
+* Retrieved snippets are assembled into a prompt and sent to the Gemini generative model, which produces the grounded answer returned to the user
+
+* A Streamlit front‑end calls this RAG answer function, letting users pose financial questions interactively
+
+* The application is to be containerized and deployed using Cloud Build to Cloud Run for managed, scalable hosting. IAM service accounts enforce least‑privilege access, and Cloud Monitoring/Logging provide observability across the deployed stack
+  
 # Data Acquisition Approach
-
-Certainly! Here’s a concise summary of both **data acquisition approach** and **GCP services used**, matching your actual workflow and the assignment requirements:
-
----
-
-## Data Acquisition Approach
 
 We iteratively explored multiple methods for acquiring public company financial data:
 
@@ -24,13 +36,22 @@ We iteratively explored multiple methods for acquiring public company financial 
 
 3. **Programmatic APIs and `yfinance`:**
 
-   * We explored public APIs (e.g., Yahoo Finance’s unofficial endpoints, SEC’s EDGAR XBRL “companyfacts”), but these often required complex field mapping and additional API management.
+   * We explored public APIs (e.g., Yahoo Finance’s unofficial endpoints, SEC’s EDGAR XBRL “companyfacts”), but these often required complex field mapping and additional API management. Below are the companies we targeted with a period range.
+  
+| Company   | Ticker | Years      |
+| --------- | ------ | ---------- |
+| Apple     | AAPL   | 2021–2024  |
+| Amazon    | AMZN   | 2021–2024  |
+| Alphabet  | GOOGL  | 2021–2024  |
+| Microsoft | MSFT   | 2022–2024  |
+| Tesla     | TSLA   | 2021–2024  |
+
    * Finally, we standardized on the open-source `yfinance` Python library, which reliably fetches annual **Income Statement** and **Balance Sheet** data for major tickers directly from Yahoo Finance.
    * This let us robustly extract all assignment-mandated fields (revenue, gross profit, net income, EPS, assets, liabilities, equity, and cash & cash equivalents) and normalize them into JSONL, CSV, and per-record JSON for downstream RAG.
 
 # GCP Services Used (and Their Roles)
 
-Here’s the full list of **GCP services used in the production pipeline**, and what each is responsible for:
+Below is the full list of **GCP services used in the production pipeline**, and what each is responsible for:
 
 | GCP Service                            | Role in Pipeline                                                                                                                                                  |
 | -------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
