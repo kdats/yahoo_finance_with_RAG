@@ -311,3 +311,21 @@ gsutil rm -r gs://$BUCKET
 ```
 
 ---
+# Sample Results with Screenshots
+<img width="1366" height="589" alt="image" src="https://github.com/user-attachments/assets/d9912d26-88db-4dac-9965-339118c35b05" />
+<img width="1522" height="646" alt="image" src="https://github.com/user-attachments/assets/5d121b86-f0e6-4d73-8fa5-71c4760ffced" />
+<img width="1736" height="659" alt="image" src="https://github.com/user-attachments/assets/26e225b1-42cd-4f91-8ab7-dcefe0c7691c" />
+<img width="1433" height="916" alt="image" src="https://github.com/user-attachments/assets/b9d1bcc8-3903-4793-a4e0-a1e570e43ede" />
+
+--- 
+# Scope of improvement
+
+* Balanced Retrieval with MMR: Incorporate Maximal Marginal Relevance (MMR) to diversify results, reducing redundancy and providing a broader set of relevant sources per query.
+
+* Hybrid Search Strategies: Combine semantic search with keyword filters, structured metadata, or numeric constraints to retrieve more precise financial context.
+
+* Domain-Specific Embeddings: Explore finance-oriented or multilingual embedding models, enabling richer representations of company filings, news, and global market data.
+
+* Agent-Orchestrated Fetching: Introduce an AI agent to dynamically acquire data, schedule scrapes, validate data quality, and adapt to new sources or failures.
+
+* Conversation Memory & Feedback: Add a conversational agent in the Streamlit app that remembers prior questions, surfaces reasoning paths, and learns from user feedback to refine future responses.
