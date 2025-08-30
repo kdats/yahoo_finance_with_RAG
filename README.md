@@ -1,6 +1,7 @@
 # Architecture Design Diagram
 
 <img width="1547" height="1460" alt="image" src="https://github.com/user-attachments/assets/48404d3c-f0db-41ef-9a1a-e3afd23a928c" />
+
 # Explaination
 * A Python wrapper file leverages the yfinance library to pull annual income statements and balance sheets, normalizing required metrics like revenue, net income and cash equivalents for each ticker-year pair
 
@@ -334,6 +335,78 @@ gsutil rm -r gs://$BUCKET
 ---
 # Sample Results with Screenshots
 <img width="1366" height="589" alt="image" src="https://github.com/user-attachments/assets/d9912d26-88db-4dac-9965-339118c35b05" />
+
+### sample context Blob
+
+``` Ticker: TSLA
+Fiscal Year: 2022
+Revenue: 81462000000
+Gross Profit: 20853000000
+Operating Income: 13832000000
+Net Income: 12583000000
+EPS (diluted): 3.62
+Assets: 82338000000
+Liabilities: 36440000000
+Equity: 45898000000
+Cash & Cash Equivalents: 16253000000
+
+---
+
+Ticker: TSLA
+Fiscal Year: 2021
+Revenue: 53823000000
+Gross Profit: 13606000000
+Operating Income: 6496000000
+Net Income: 5524000000
+EPS (diluted): 1.63
+Assets: 62131000000
+Liabilities: 30548000000
+Equity: 31583000000
+Cash & Cash Equivalents: 17576000000
+
+---
+
+Ticker: TSLA
+Fiscal Year: 2024
+Revenue: 97690000000
+Gross Profit: 17450000000
+Operating Income: 7760000000
+Net Income: 7130000000
+EPS (diluted): 2.04
+Assets: 122070000000
+Liabilities: 48390000000
+Equity: 73680000000
+Cash & Cash Equivalents: 16139000000
+
+---
+
+Ticker: TSLA
+Fiscal Year: 2023
+Gross Profit: 17660000000
+Operating Income: 8891000000
+Net Income: 14999000000
+EPS (diluted): 4.31
+Assets: 106618000000
+Liabilities: 43009000000
+Equity: 63609000000
+Cash & Cash Equivalents: 16398000000
+
+---
+
+Ticker: AAPL
+Fiscal Year: 2022
+Revenue: 394328000000
+Gross Profit: 170782000000
+Operating Income: 119437000000
+Net Income: 99803000000
+EPS (diluted): 6.11
+Assets: 352755000000
+Liabilities: 302083000000
+Equity: 50672000000
+Cash & Cash Equivalents: 23646000000
+
+```
+
 <img width="1522" height="646" alt="image" src="https://github.com/user-attachments/assets/5d121b86-f0e6-4d73-8fa5-71c4760ffced" />
 <img width="1736" height="659" alt="image" src="https://github.com/user-attachments/assets/26e225b1-42cd-4f91-8ab7-dcefe0c7691c" />
 <img width="1433" height="916" alt="image" src="https://github.com/user-attachments/assets/b9d1bcc8-3903-4793-a4e0-a1e570e43ede" />
